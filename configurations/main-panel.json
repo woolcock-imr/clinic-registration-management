@@ -2,7 +2,7 @@
 	"name":"Clinic Registration Management",
 	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
 	"parameters":{
-		"sql_participant" : "@('Registration_ID')+' '+@('Gender')+' '+@('DOB')",
+		"sql_participant" : "@('First_Name')+' '+@('Last_Name')",
 		"child_configuration_url":"/configurations/child-panel.json"
 	},
 	"modules":
@@ -42,7 +42,7 @@
 						"modules":
 						[
 							{
-								"module_id":"q_notes",
+								"module_id":"task_notes",
 								"name":"Notes",
 								"table_id":"20011181",
 								"url":"/modules/registration-records.html",
