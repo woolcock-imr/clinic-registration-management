@@ -1,27 +1,15 @@
 {
-	"name":"Clinic Registration Management",
+	"name":"",
 	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
 	"parameters":{
-		"sql_participant" : "@('Registration_ID')+' '+@('Gender')+' '+@('DOB')",
-		"child_configuration_url":"/configurations/child-panel.json"
+		"sql_participant" : "@('Registration_ID')+' '+@('Gender')+' '+@('DOB')"
 	},
-	"modules":
-	[
-		{
-		   "module_id" : "participant_login_setup",
-		   "table_id":"20011178",
-		   "url" : "/modules/participant_login_setup.html"
-		}
-		,{
-		   "module_id" : "questionnaire",
-		   "url" : "https://vmiis.github.io/modules/panels/questionnaire.html"
-		}
-	],
 	"panel":
 	{
 		"columns":
 		[
 			{
+				"hidden":"1",
 				"sections":
 				[
 					{
@@ -53,7 +41,7 @@
 				]
 			}
 			,{
-				"sections":
+				"sections" :
 				[
 					{
 						"name":"Section 1",
@@ -61,31 +49,35 @@
 						[
 							{
 								"module_id":"m_001",
-								"name":"Medicare and Referrals",
+								"name":"Task 1",
 								"table_id":"20011175",
-								"url":"/modules/task/medicare_referrals.html",
+								"url":"/modules/task/template.html",
 								"counting":"1",
 								"quest":"1",
+								"child":"1",
+								"single_record":"1",
 								"form_module":"m_001_form"
 							}
 							,{
 								"module_id":"m_001_form",
 								"table_id":"20011175",
-								"url":"/modules/task/medicare_referrals.form.html"
+								"url":"/modules/task/template.form.html"
 							}
 							,{
 								"module_id":"m_002",
-								"name":"Patient Health History",
+								"name":"Task 2",
 								"table_id":"20011176",
-								"url":"/modules/task/patient_health_history.html",
+								"url":"/modules/task/template.html",
 								"counting":"1",
 								"quest":"1",
+								"child":"1",
+								"single_record":"1",
 								"form_module":"m_002_form"
 							}
 							,{
 								"module_id":"m_002_form",
 								"table_id":"20011176",
-								"url":"/modules/task/patient_health_history.form.html"
+								"url":"/modules/task/template.form.html"
 							}
 						]
 					}
