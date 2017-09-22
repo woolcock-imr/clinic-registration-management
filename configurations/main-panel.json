@@ -60,6 +60,20 @@
 						"modules":
 						[
 							{
+								"module_id":"m_000",
+								"name":"Personal Details",
+								"table_id":"20011175",
+								"url":"/modules/task/personal.html",
+								"counting":"1",
+								"quest":"1",
+								"form_module":"m_000_form"
+							}
+							,{
+								"module_id":"m_000_form",
+								"table_id":"20011175",
+								"url":"/modules/task/personal.form.html"
+							}
+							,{
 								"module_id":"m_001",
 								"name":"Medicare and Referrals",
 								"table_id":"20011175",
@@ -75,9 +89,9 @@
 							}
 							,{
 								"module_id":"m_002",
-								"name":"Patient Health History",
+								"name":"Short Sleep History",
 								"table_id":"20011176",
-								"url":"/modules/task/patient_health_history.html",
+								"url":"/modules/task/short_sleep_history.html",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"m_002_form"
@@ -85,13 +99,13 @@
 							,{
 								"module_id":"m_002_form",
 								"table_id":"20011176",
-								"url":"/modules/task/patient_health_history.form.html"
+								"url":"/modules/task/short_sleep_history.form.html"
 							}
 							,{
 								"module_id":"m_003",
-								"name":"Patient Health History Night",
+								"name":"Health History",
 								"table_id":"20011190",
-								"url":"/modules/task/patient_health_history_night.html",
+								"url":"/modules/task/health_history.html",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"m_003_form"
@@ -99,7 +113,35 @@
 							,{
 								"module_id":"m_003_form",
 								"table_id":"20011190",
-								"url":"/modules/task/patient_health_history_night.form.html"
+								"url":"/modules/task/health_history.form.html"
+							}
+							,{
+								"module_id":"m_004",
+								"name":"Sleep History",
+								"table_id":"20011190",
+								"url":"/modules/task/sleep_history.html",
+								"counting":"1",
+								"quest":"1",
+								"form_module":"m_004_form"
+							}
+							,{
+								"module_id":"m_004_form",
+								"table_id":"20011190",
+								"url":"/modules/task/sleep_history.form.html"
+							}
+							,{
+								"module_id":"m_005",
+								"name":"Additional Questions",
+								"table_id":"20011190",
+								"url":"/modules/task/additional_questions.html",
+								"counting":"1",
+								"quest":"1",
+								"form_module":"m_005_form"
+							}
+							,{
+								"module_id":"m_005_form",
+								"table_id":"20011190",
+								"url":"/modules/task/additional_questions.form.html"
 							}
 						]
 					}

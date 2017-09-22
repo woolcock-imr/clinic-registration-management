@@ -7,13 +7,16 @@
         VmInclude:__PARTS__/grid/grid.js
         VmInclude:__PARTS__/style/ease-in-out.2.js
         //-------------------------------------
-        var fields="Record_ID,First_Name,Last_Name,Phone_Number,Email,Postcode,_Data_Entry,_Setup,_Quest,_Login_ID,_Password";
+        var fields="Record_ID,First_Name,Last_Name,Phone_Number,Email,Postcode,DOB,Appointment_Date,Appointment_Time,_Data_Entry,_Setup,_Quest,_Login_ID,_Password";
         _fields="_Form,"+fields+",Submit Date|DateTime,Submitted by|Author,_Delete";
         //-------------------------------------
         $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
         //-------------------------------------
 		_cell_render=function(records,I,field,td,set_value,source){
             switch(field){
+                case 'Appointment_Date':
+                    VmInclude:__PARTS__/grid/field_date.js
+                    break;
                 case 'Record_ID':
                     records[I].vm_custom[field]=true;
                     td.html(records[I].UID);
