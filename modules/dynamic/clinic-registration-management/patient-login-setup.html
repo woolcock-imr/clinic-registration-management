@@ -19,8 +19,7 @@
 <script>
     function F__ID(){
         //---------------------------------------------
-        VmInclude:__LIB__/vmiis/Common-Code/toolbar/back.js
-        VmInclude:__LIB__/vmiis/Common-Code/style/ease-in-out.js
+        VmInclude:__PARTS__/toolbar/back.js
         //---------------------------------------------
 		var _mlist=$vm.module_list;
 		var _mobj=$vm.vm['__ID'];
@@ -104,7 +103,6 @@
             $('#table_grid__ID').html(txt);
             $('#table_grid__ID th:nth-child(2)').hide();$('#table_grid__ID td:nth-child(2)').hide();
             set_box();
-            if(g_user=='builder') $('#tr_builder__ID').show();
             //check and uncheck group checkbox
             $('.visit__ID').on('click',function(){
                 var data_visit=$(this).attr('data-visit');
@@ -201,10 +199,11 @@
       #D__ID,#pvdiv__ID{
           font-size:10pt;
           font-family: Verdana,Helvetica,Arial,sans-serif;
-          background: url("__LIB__/vmiis/common-code/image/texture.png");
+          background: url("__PARTS__/image/texture.png");
       }
       #D__ID{
           /*background-color:#fff;*/
+		  height:100%;
       }
       #toolbar__ID *{
           margin:0;
